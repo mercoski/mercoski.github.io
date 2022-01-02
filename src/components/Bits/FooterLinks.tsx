@@ -5,11 +5,11 @@ import { getLanguageFromURL } from "../../languages";
 export default function FooterLinks(props: FooterLinksProps) {
     const linkList = [
         {
-            link: "https://github.com/ayberktandogan",
+            link: "https://github.com/mercoski",
             logo: <SiGithub />,
         },
         {
-            link: "https://www.linkedin.com/in/ayberk-tandogan/",
+            link: "https://www.linkedin.com/in/mertcan-erbaşi-46a554108/",
             logo: <SiLinkedin />,
         },
         {
@@ -17,7 +17,7 @@ export default function FooterLinks(props: FooterLinksProps) {
             logo: <FaFilePdf />,
         },
         {
-            link: "mailto:ayberk.tandogan@outlook.com",
+            link: "mailto:mertcanerbasiemk@gmail.com",
             logo: <FaEnvelope />,
         },
     ];
