@@ -1,0 +1,20 @@
+---
+// @ts-nocheck 
+import GContent from '../../components/GContent.astro'
+import NavButton from '../../components/NavButton/index.tsx'
+import Project from '../../components/Project/index.tsx'
+
+let title = 'Projelerim | Mertcan Erbaşı';
+let description = "Mertcan Erbaşı | Portfolio Projelerim"
+
+
+let allPosts = Astro.fetchContent('./project/*.md');
+---
+<GContent title={title} description={description}>
+    <div class="flex flex-wrap w-full">
+        {allPosts.map((project, idx) => <Project {...project} idx={idx} />)}
+    </div>
+    <div class="mt-12">
+        <NavButton path="/tr/experience" title="Deneyimlerim" />
+    </div>
+</GContent>
