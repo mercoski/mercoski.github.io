@@ -60,16 +60,20 @@ export default function TechItem(props: TechItemProps) {
             break;
         }
         case "Vue": {
-            logo = <SiVueDotJs size={16} />
+            logo = <SiVueDotJs size={16} />;
+            break;
         }
         case "Vuetify": {
             logo = <SiVuetify size={16} />
+            break;
         }
         case "Flutter": {
             logo = <SiFlutter size={16} />
+            break;
         }
         case "API": {
             logo = <SiCloudcannon size={16} />
+            break;
         }
         default:
             break;
